@@ -7,18 +7,34 @@
   <h1>ABAKADA</h1>
   <div>
     <audio id="sound" preload="auto">
-        <source src="sound.mp3" type="audio/mpeg">
+        <source src="sound/sound.flac" type="audio/mpeg">
     </audio>
+    <audio id="a-sound" preload="auto">
+        <source src="sound/a.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="b-sound" preload="auto">
+        <source src="sound/b.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="c-sound" preload="auto">
+        <source src="sound/c.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="d-sound" preload="auto">
+        <source src="sound/d.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="e-sound" preload="auto">
+        <source src="sound/e.mp3" type="audio/mpeg">
+    </audio>
+
       <table border="1">
         <tr>
             <th colspan="5">ABAKADA</th>
         </tr>
         <tr>
-            <th>a</th>
-            <th>e</th>
-            <th>i</th>
-            <th>o</th>
-            <th>u</th>
+            <th onclick="document.getElementById('a-sound').play()">a</th>
+            <th onclick="document.getElementById('b-sound').play()">b</th>
+            <th onclick="document.getElementById('c-sound').play()">c</th>
+            <th onclick="document.getElementById('d-sound').play()">d</th>
+            <th onclick="document.getElementById('e-sound').play()">e</th>
         </tr>
         <tr>
             <td>ba</td>
@@ -126,6 +142,7 @@
             <td>yu</td>
         </tr>
     </table>
+    <button onclick="document.getElementById('sound').play()" >sound</button>
   </div>
 </body>
 </html>
